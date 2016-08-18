@@ -23,6 +23,7 @@ def super_sum(*args):
 
 	
 	return total
+print super_sum(9,2)
 
 	
 
