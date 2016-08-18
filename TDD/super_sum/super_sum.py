@@ -1,9 +1,28 @@
-def super_sum(items):
+def super_sum(*args):
 	'''
-	Takes in two numbers
-	and returns 
-	the sum
+	Takes in elements 
+	in a list and returns
+	total  sum
 	'''
 
 	pass
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
