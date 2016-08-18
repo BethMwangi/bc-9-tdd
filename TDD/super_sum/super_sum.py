@@ -6,7 +6,7 @@ def super_sum(*args):
 	'''
 
 	total = 0 #initialize the total for elements in a list
-	int_num = 0 #adds the integers passed 
+	
 
 	for element in args: # loops through each element passed
 		if type(element) is list: #test if the element is a list
@@ -17,14 +17,12 @@ def super_sum(*args):
 					return ' You have entered a non integer'
 		else:
 			if type(element) is int: #test if the element passed is an integer
-				int_num = element + int_num
+				total += element
 			else:
 				return 'you entered a non integer item'
 
-	super_total = int_num + total #adds the super sum of all elements
-	return super_total
-
 	
+	return total
 
 	
 
