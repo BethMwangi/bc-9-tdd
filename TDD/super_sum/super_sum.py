@@ -6,13 +6,15 @@ def super_sum(*args):
 	'''
 
 	total = 0 #initialize the total for elements in a list
-	
+	float_num = 0.0
 
 	for element in args: # loops through each element passed
-		if type(element) is list: #test if the element is a list
+		if isinstance(element,list): #test if the element is a list
 			for i in element:
-				if type(i) is int:
+				if isinstance(i, int):
 					total = i + total # adds the elements in an individual list
+				elif isinstance(i, float):
+					float_num = i + float_num
 				else:
 					return ' You have entered a non integer'
 		else:
@@ -21,9 +23,11 @@ def super_sum(*args):
 			else:
 				return 'you entered a non integer item'
 
-	
-	return total
-print super_sum(9,2)
+	super_sum = float_num + total
+	return super_sum
+
+
+
 
 	
 
