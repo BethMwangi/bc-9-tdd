@@ -19,16 +19,16 @@ class TestSuperSum(unittest.TestCase):
 		''' test sum of elements in given lists and add to integer'''
 		self.assertEqual(super_sum([5,6], [4,5], [1,2]), 23)
 
-	def test_string(self):
+	def test_five(self):
 		'''assert throwing of exceptions if  a string  is passed'''
-		result = super_sum()
+		result = super_sum('')
 		self.assertNotEqual(type(result), int , msg= 'The input should be an integer')
 
-	def test_string(self):
+	def test_six(self):
 		'''assert throwing of exceptions if  a string  is passed'''
 		self.assertNotEqual(super_sum(''), None , msg= 'should return /None')
 
-	def test_string(self):
+	def test_seven(self):
 		'''assert whether the total is in a list'''
 		self.assertIn(super_sum(1,2,3), [6,8,9,10] , msg= 'The result is not in a list')
 
